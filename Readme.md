@@ -40,7 +40,7 @@ It consists of multiple tables which include relevant information about the cust
 ### Step 1: Clone this repository
 Run:
 ```bash
-git clone https://github.com/SaiJeevanPuchakayala/Timelytics
+git clone https://github.com/vivek-kanjariya/ML-model
 ```
 
 ### Step 2: Navigate to the Timelytics directory
