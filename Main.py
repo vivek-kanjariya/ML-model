@@ -3,6 +3,7 @@ import streamlit as st
 import pickle
 import numpy as np
 from PIL import Image
+import os
 
 # Set the page configuration of the app, including the page title, icon, and layout.
 st.set_page_config(page_title="Timelytics", page_icon=":pencil:", layout="wide")
@@ -58,9 +59,18 @@ def waitime_predictor(
 
 
 # Define the input parameters using Streamlit's sidebar. These parameters include the purchased day of the week, month, and year, product size, weight, geolocation state of the customer and seller, and distance.
-with st.sidebar:
-    img = Image.open("./supply_chai_optimisation.jpg")
-    st.image(img)
+# with st.sidebar:
+#     img = Image.open("./supply_chai_optimisation.jpg")
+#     st.image(img)
+
+image_path = "./supply_chai_optimisation.jpg"
+
+if os.path.exists(image_path):
+    st.image(image_path, caption="Loaded Image", use_column_width=True)
+else:
+    st.write("Image Not Found")
+    
+    
     st.header("Input Parameters")
     purchase_dow = st.number_input(
         "Purchased Day of the Week", min_value=0, max_value=6, step=1, value=3
