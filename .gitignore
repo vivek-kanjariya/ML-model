@@ -6,8 +6,6 @@ data/
 
 TrainMain.py
 
-voting_Model.pkl
-
 .env
 
 Order to Delivery (OTD) Time Forecasting.ipynb
