@@ -20,7 +20,7 @@ st.caption(
 
 
 # Load the trained ensemble model from the saved pickle file.
-modelfile = "./voting_model.pkl"
+modelfile = "./NEWWvoting_model.pkl"
 voting_model = pickle.load(open(modelfile, "rb"))
 
 # Caching the model for faster loading
